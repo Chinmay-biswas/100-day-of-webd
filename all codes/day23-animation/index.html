@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-color: beige;
+            border:5px solid black;
+        }
+        .box{
+            width: 350px;
+            height: 80px;
+            background-color: rgb(105, 105, 206);
+            border: solid 2px black;
+            border-radius: 6px;
+            margin: 10px;
+            position: relative;
+            animation-name: rm;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            /* infinite; */
+            animation-delay: 1s;
+            animation-timing-function: linear;
+            animation-direction: alternate;
+            animation-fill-mode: forwards;
+
+        }
+        @keyframes rm {
+            from{
+                top: 0;
+                left: 0;
+
+            }
+            to{
+                top:0;
+                left:1550px;
+
+            }
+            
+        }
+        .box2{
+            width: 350px;
+            height: 80px;
+            background-color: rgb(105, 105, 206);
+            border: solid 2px black;
+            border-radius: 6px;
+            margin: 10px;
+            position: relative;
+            animation-name: rm1;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            /* infinite; */
+            animation-delay: 1s;
+            animation-timing-function: linear;
+            animation-direction: alternate;
+            animation-fill-mode: forwards;
+
+        }
+        @keyframes rm1 {
+            from{
+                top: 680px;
+                left: 1550px;
+
+            }
+            to{
+                top:680px;
+                left:0;
+
+            }
+            
+        }
+        #circle{
+            background-color: brown;
+            border: solid black 2px;
+            border-radius: 50px;
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            position: relative;
+            animation-name: c;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            /* infinite; */
+            animation-delay: 1s;
+            animation-timing-function: linear;
+            animation-direction: alternate;
+            animation-fill-mode: forwards;
+
+        }
+        @keyframes c {
+        0%{
+            top: 1%;
+            left: 5%;
+        }
+        30%{
+            top: 5%;
+            left: 90%;
+        }
+        60%{
+            top: 60%;
+            left: 10%;
+        }
+        100%{
+            top: 65%;
+            left: 90%;
+        }    
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+
+        </div>
+        <div class="box2"></div>
+
+        <div id="circle"></div>
+
+    </div>
+    
+    
+</body>
+</html>
