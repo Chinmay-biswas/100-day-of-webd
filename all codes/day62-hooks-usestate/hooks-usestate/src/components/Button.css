@@ -1,0 +1,9 @@
+.container2{
+    background-color: rgb(51, 104, 174);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    border: solid 2px white;
+    border-radius: 10px;
+}
