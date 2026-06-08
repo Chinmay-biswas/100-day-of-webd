@@ -1,0 +1,12 @@
+#container{
+  height: 400px;
+  width: 400px;
+  border: solid 2px red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(52, 123, 184);
+  
+
+}
